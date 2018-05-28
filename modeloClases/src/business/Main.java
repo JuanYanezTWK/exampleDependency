@@ -15,12 +15,12 @@ public class Main {
 		p.setCode("myCode");;
 		p.setName("Martillo");
 		lstObjects.add(p);
-		
+		/*
 		Customer c = new Customer();
 		c.setName("Don pepe");
 		c.setRut("1-9");
 		lstObjects.add(c);
-		
+		*/
 		Employee e = new Employee();
 		e.setName("Juanito Perez");
 		e.setRut("1-7");
