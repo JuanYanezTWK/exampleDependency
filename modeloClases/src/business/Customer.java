@@ -1,20 +1,21 @@
 package business;
 
-public class Customer {
+public class Customer implements IMyData {
 
-	private String rutCustomer;
-	private String nombreCustomer;
-	public String getRutCustomer() {
-		return rutCustomer;
+	private String rut;
+	private String name;
+	
+	public String getRut() {
+		return rut;
 	}
-	public void setRutCustomer(String rutCustomer) {
-		this.rutCustomer = rutCustomer;
+	public void setRut(String rut) {
+		this.rut = rut;
 	}
-	public String getNombreCustomer() {
-		return nombreCustomer;
+	public String getName() {
+		return "Customer: " + name;
 	}
-	public void setNombreCustomer(String nombreCustomer) {
-		this.nombreCustomer = nombreCustomer;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	

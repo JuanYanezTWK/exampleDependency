@@ -1,21 +1,21 @@
 package business;
 
-public class Car {
+public class Car implements IMyData{
 
-	private int codigoCar;
-	private String nombreCar;
+	private String codigo;
+	private String name;
 	
-	public int getCodigoCar() {
-		return codigoCar;
+	public String getCodigo() {
+		return codigo;
 	}
-	public void setCodigoCar(int codigoCar) {
-		this.codigoCar = codigoCar;
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
 	}
-	public String getNombreCar() {
-		return nombreCar;
+	public String getName() {
+		return "CarName: " +name;
 	}
-	public void setNombreCar(String nombreCar) {
-		this.nombreCar = nombreCar;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	

@@ -1,21 +1,23 @@
 package business;
 
-public class Employee {
+public class Employee implements IMyData {
 
-	private String rutEmployee;
-	private String nombreEmployee;
-	public String getRutEmployee() {
-		return rutEmployee;
+	private String rut;
+	private String name;
+	
+	public String getRut() {
+		return rut;
 	}
-	public void setRutEmployee(String rutEmployee) {
-		this.rutEmployee = rutEmployee;
+	public void setRut(String rut) {
+		this.rut = rut;
 	}
-	public String getNombreEmployee() {
-		return nombreEmployee;
+	public String getName() {
+		return "Employee: " + name;
 	}
-	public void setNombreEmployee(String nombreEmployee) {
-		this.nombreEmployee = nombreEmployee;
+	public void setName(String name) {
+		this.name = name;
 	}
+	
 	
 	
 }
