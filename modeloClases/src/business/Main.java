@@ -49,6 +49,11 @@ public class Main {
 			System.out.println(cur.getName());
 			
 		}
+		WebServiceMock wsm = new WebServiceMock();
+		
+		
+		Customer cc = new Customer(wsm);
+		System.out.println(cc.getAmount());
 	}
 
 }

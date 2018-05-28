@@ -4,6 +4,12 @@ public class Customer implements IMyData {
 
 	private String rut;
 	private String name;
+	private IWebService _ws;
+	
+	Customer(IWebService iWs){
+		_ws = iWs;
+		
+	}
 	
 	public String getRut() {
 		return rut;
@@ -16,6 +22,16 @@ public class Customer implements IMyData {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public double getAmount() {
+		return 100 * _ws.getTax();
+		
+	}
+	
+	public String ToString() {
+		return this.getName() + " Intereres son: " + getAmount();
+		
 	}
 	
 	
